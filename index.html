@@ -1,0 +1,29 @@
+<!doctype html><html lang="bn"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MapMyBangladesh — Track Every District You Explore</title>
+<meta name="description" content="Mark the districts of Bangladesh you have visited on a real 64-district map, add notes and dates, and download your travel map as PNG, JPG or PDF."><meta property="og:title" content="MapMyBangladesh"><meta property="og:description" content="Track Every District You Explore">
+<link rel="icon" href="assets/svg/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;700&display=swap"><link rel="stylesheet" href="assets/css/app.css">
+<script>try{var t=JSON.parse(localStorage["mmb:v1"]).theme;document.documentElement.dataset.theme=t=="dark"||(t!="light"&&matchMedia("(prefers-color-scheme:dark)").matches)?"dark":"light"}catch(e){}</script></head><body>
+<header id="top"></header><main>
+<section class="hero2"><svg id="heroMap" aria-hidden="true"></svg><div class="hin"><span class="chip" data-t="heroChip"></span><h1 data-t="heroH"></h1><p data-t="heroP"></p>
+<div class="stats"><div><b data-stat="visited">0</b><small data-t="vis"></small></div><div><b data-stat="remaining">64</b><small data-t="rem"></small></div><div><b data-stat="pct">0%</b><small data-t="comp"></small></div></div>
+<a class="btn wht" href="#map" data-t="cta"></a>
+<ol class="steps"><li data-t="s1"></li><li data-t="s2"></li><li data-t="s3"></li></ol></div></section>
+<section id="map" class="lay">
+<aside class="card side" id="explorer"><div class="sh"><h2 data-t="mine"></h2><span class="chip" id="cnt">0 / 64</span></div>
+<input type="search" id="q" data-tp="searchPh" aria-label="Search districts"><select id="dv" aria-label="Division filter"></select>
+<div class="acts"><button class="lnk" id="sa" data-t="gAll"></button><button class="lnk" id="ca" data-t="clr"></button></div><div id="chips"></div></aside>
+<div class="right">
+<div class="card" id="mapCardWrap"><div class="bar2"><span class="mut" data-t="themeL"></span><div id="sws"></div></div>
+<div class="prof"><label class="btn up"><img id="pimg" alt="" hidden><span data-t="photo"></span><input type="file" id="pi" accept="image/*" hidden></label><button class="lnk" id="rp">✕</button><input id="un" data-tp="namePh" maxlength="30" aria-label="Name"><label class="tg"><input type="checkbox" id="sn" checked><span data-t="showNames"></span></label></div>
+<div id="mapCard"><div id="skel"></div><div class="mh"><img id="pimg2" alt="" hidden><div><small id="kk"></small><h2 data-t="mtitle"></h2></div><div class="big"><b id="bc">0</b><small>/ ৬৪</small></div></div>
+<div class="zc" data-html2canvas-ignore><button class="btn icon" id="zi" aria-label="Zoom in">+</button><button class="btn icon" id="zo" aria-label="Zoom out">−</button><button class="btn icon" id="zr" aria-label="Reset view">⤢</button></div>
+<svg id="map" role="group" aria-label="Map of Bangladesh districts"><g id="mg" style="transform-origin:0 0"></g><g id="lb" style="transform-origin:0 0"></g></svg>
+<div class="legend"><span><i style="background:var(--mvis)"></i><s data-t="lv"></s></span><span><i style="background:var(--wa)"></i><s data-t="lw"></s></span><span><i style="border:2px solid var(--er)"></i><s data-t="lf"></s></span><span><i style="background:var(--mtile)"></i><s data-t="ln"></s></span></div>
+<div class="pbar"><div class="bar"><i id="bar"></i></div><div class="pl"><b id="pt"></b><small id="ps"></small></div></div><div class="brand">MapMyBangladesh · © geoBoundaries CC BY 4.0</div></div>
+<p class="mut tip" data-t="tip"></p>
+<h2 data-t="dlT"></h2><div class="tools"><button class="btn pri" id="xp">↓ PNG</button><button class="btn" id="xj">↓ JPG</button><button class="btn" id="xf">↓ PDF</button><button class="btn" id="xs" data-t="shareImg"></button><button class="btn" id="xl" data-t="copyL"></button></div></div>
+<aside class="card"><p class="mut" id="pph" data-t="pph"></p><form id="pf" hidden><div><h2 id="pn"></h2><span class="chip" id="pd"></span></div>
+<div><label class="tg"><input type="checkbox" id="fv"><span data-t="fv"></span></label> <label class="tg"><input type="checkbox" id="fw"><span data-t="fw"></span></label> <label class="tg"><input type="checkbox" id="ff"><span data-t="ff"></span></label></div>
+<label><span data-t="fd"></span><input type="date" id="ft"></label><label><span data-t="fnn"></span><textarea id="fn" maxlength="600"></textarea></label><button class="btn pri" type="submit" data-t="save"></button></form>
+<h2 style="margin-top:24px" data-t="recent"></h2><ul id="act"></ul></aside></div></section>
+</main><footer></footer>
+<script src="assets/js/data.js"></script><script src="assets/js/geo.js"></script><script src="assets/js/app.js"></script><script src="assets/js/creator.js"></script><script src="assets/js/map.js"></script></body></html>
